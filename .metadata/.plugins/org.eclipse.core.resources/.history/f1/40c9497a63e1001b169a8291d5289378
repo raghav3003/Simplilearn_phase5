@@ -1,0 +1,19 @@
+package Day2;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TableDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//*[@id="leftcontainer"]/table/thead/tr/th[1]
+		System.getProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("http://demo.guru99.com/test/web-table-element.php");
+		driver.manage().window().maximize();
+		Thread.sleep(1000);
+	}
+
+}

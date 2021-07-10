@@ -1,0 +1,86 @@
+package Day1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class RegistrationFormExample {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.getProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("http://demo.automationtesting.in/Register.html");
+		driver.manage().window().maximize();
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("Raghav");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("Gupta");
+		Thread.sleep(1000);
+		
+		WebElement checkbox1 = driver.findElement(By.id("checkbox1"));
+		WebElement checkbox2 = driver.findElement(By.id("checkbox2"));
+		WebElement checkbox3 = driver.findElement(By.id("checkbox3"));
+		
+		checkbox1.click();
+		Thread.sleep(1000);
+		System.out.println(checkbox1.isSelected());
+		
+		checkbox2.click();
+		Thread.sleep(1000);
+		System.out.println(checkbox2.isSelected());
+		
+		checkbox3.click();
+		Thread.sleep(1000);
+		System.out.println(checkbox3.isSelected());
+		
+		WebElement language = driver.findElement(By.id("msdd"));
+		
+//		WebElement selectCountry = driver.findElement(By.id("select2-country-container"));
+//		Select dropdown0 = new Select(selectCountry);
+//		dropdown0.selectByIndex(10);
+		
+		
+		WebElement skillDropDown = driver.findElement(By.id("Skills")); 
+		Select dropdown = new Select(skillDropDown);  
+		dropdown.selectByIndex(5);
+		
+		WebElement countryDropDown = driver.findElement(By.id("countries")); 
+		Select dropdown2 = new Select(countryDropDown);  
+		dropdown2.selectByIndex(10);
+		
+		WebElement yearDropDown = driver.findElement(By.id("yearbox")); 
+		Select dropdown3 = new Select(yearDropDown);  
+		dropdown2.selectByIndex(20);
+		
+		WebElement monthDropDown = driver.findElement(By.id("monthbox")); 
+		Select dropdown4 = new Select(monthDropDown);  
+		dropdown2.selectByIndex(10);
+		
+		WebElement dayDropDown = driver.findElement(By.id("daybox")); 
+		Select dropdown5 = new Select(dayDropDown);  
+		dropdown2.selectByIndex(6);
+		
+		driver.findElement(By.id("firstpassword")).sendKeys("Raghav");
+		driver.findElement(By.id("secondpassword")).sendKeys("Raghav");
+		
+//		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("pen drive");
+//		Thread.sleep(2000);
+		
+//		driver.findElement(By.id("nav-search-submit-text")).click();
+//		Thread.sleep(4000);
+//		
+//		driver.findElement(By.linkText("16 GB")).click();
+//		Thread.sleep(2000);
+//		
+//		driver.findElement(By.partialLinkText("HP")).click();
+//		Thread.sleep(5000);
+//		driver.navigate().back();
+		
+		
+	}
+	
+}
