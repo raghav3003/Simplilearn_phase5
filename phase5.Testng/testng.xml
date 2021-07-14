@@ -58,10 +58,25 @@
 </suite> ParallelSuite
  -->
 
-<suite name="Suite">
+<!-- <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.asserts.Assertions"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> Test
+</suite> -->
+
+<suite name="Main Test Suite" parallel="tests" verbose="1">
+    <test name="Grid firefox Test">
+    <parameter name="browser" value="firefox"/>
+        <classes>
+        <class name="selenium.grid.ParallelTestA"/>
+        </classes>
+    </test>
+    <test name="Grid chrome Test">
+    <parameter name="browser" value="chrome"/>
+        <classes>
+        <class name="selenium.grid.ParallelTestB"/>
+        </classes>
+    </test>
+</suite>

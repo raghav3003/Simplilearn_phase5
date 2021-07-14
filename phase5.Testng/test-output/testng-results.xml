@@ -2,24 +2,58 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-14T14:27:00 IST" name="Default suite" finished-at="2021-07-14T14:27:15 IST" duration-ms="14212">
+  <suite started-at="2021-07-14T18:23:24 IST" name="Main Test Suite" finished-at="2021-07-14T18:23:34 IST" duration-ms="10598">
     <groups>
     </groups>
-    <test started-at="2021-07-14T14:27:00 IST" name="Default test" finished-at="2021-07-14T14:27:15 IST" duration-ms="14212">
-      <class name="com.asserts.Assertions">
-        <test-method signature="Launch()[pri:0, instance:com.asserts.Assertions@55536d9e]" started-at="2021-07-14T14:27:00 IST" name="Launch" finished-at="2021-07-14T14:27:07 IST" duration-ms="6061" status="PASS">
+    <test started-at="2021-07-14T18:23:24 IST" name="Grid chrome Test" finished-at="2021-07-14T18:23:34 IST" duration-ms="10559">
+      <class name="selenium.grid.ParallelTestB">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:selenium.grid.ParallelTestB@5562c41e]" started-at="2021-07-14T18:23:24 IST" name="setUp" finished-at="2021-07-14T18:23:27 IST" duration-ms="3450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Launch -->
-        <test-method signature="Facebook()[pri:0, instance:com.asserts.Assertions@55536d9e]" started-at="2021-07-14T14:27:07 IST" name="Facebook" finished-at="2021-07-14T14:27:11 IST" depends-on-methods="com.asserts.Assertions.Launch" duration-ms="4333" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testGooglePageTitleInChrome()[pri:0, instance:selenium.grid.ParallelTestB@5562c41e]" started-at="2021-07-14T18:23:27 IST" name="testGooglePageTitleInChrome" finished-at="2021-07-14T18:23:30 IST" duration-ms="2389" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Facebook -->
-        <test-method signature="Login()[pri:0, instance:com.asserts.Assertions@55536d9e]" started-at="2021-07-14T14:27:11 IST" name="Login" finished-at="2021-07-14T14:27:15 IST" depends-on-methods="com.asserts.Assertions.Facebook" duration-ms="3751" status="PASS">
+        </test-method> <!-- testGooglePageTitleInChrome -->
+        <test-method signature="testSearchGoogle()[pri:0, instance:selenium.grid.ParallelTestB@5562c41e]" started-at="2021-07-14T18:23:30 IST" name="testSearchGoogle" finished-at="2021-07-14T18:23:34 IST" duration-ms="4518" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-      </class> <!-- com.asserts.Assertions -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testSearchGoogle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.grid.ParallelTestB@5562c41e]" started-at="2021-07-14T18:23:34 IST" name="tearDown" finished-at="2021-07-14T18:23:34 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selenium.grid.ParallelTestB -->
+    </test> <!-- Grid chrome Test -->
+    <test started-at="2021-07-14T18:23:24 IST" name="Grid firefox Test" finished-at="2021-07-14T18:23:34 IST" duration-ms="10598">
+      <class name="selenium.grid.ParallelTestA">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:selenium.grid.ParallelTestA@29d89d5d]" started-at="2021-07-14T18:23:24 IST" name="setUp" finished-at="2021-07-14T18:23:31 IST" duration-ms="7431" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGooglePageTitleInFirefox()[pri:0, instance:selenium.grid.ParallelTestA@29d89d5d]" started-at="2021-07-14T18:23:31 IST" name="testGooglePageTitleInFirefox" finished-at="2021-07-14T18:23:33 IST" duration-ms="1755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGooglePageTitleInFirefox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.grid.ParallelTestA@29d89d5d]" started-at="2021-07-14T18:23:33 IST" name="tearDown" finished-at="2021-07-14T18:23:34 IST" duration-ms="1366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selenium.grid.ParallelTestA -->
+    </test> <!-- Grid firefox Test -->
+  </suite> <!-- Main Test Suite -->
 </testng-results>

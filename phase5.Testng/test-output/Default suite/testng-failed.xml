@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.asserts.Assertions">
+      <class name="selenium.grid.ParallelTestB">
         <methods>
-          <include name="Facebook"/>
-          <include name="Launch"/>
-          <include name="Login"/>
+          <include name="setUp"/>
+          <include name="testSearchGoogle"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.asserts.Assertions -->
+      </class> <!-- selenium.grid.ParallelTestB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
