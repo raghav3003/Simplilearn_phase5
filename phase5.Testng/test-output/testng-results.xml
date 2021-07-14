@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-14T14:27:00 IST" name="Default suite" finished-at="2021-07-14T14:27:15 IST" duration-ms="14212">
+    <groups>
+    </groups>
+    <test started-at="2021-07-14T14:27:00 IST" name="Default test" finished-at="2021-07-14T14:27:15 IST" duration-ms="14212">
+      <class name="com.asserts.Assertions">
+        <test-method signature="Launch()[pri:0, instance:com.asserts.Assertions@55536d9e]" started-at="2021-07-14T14:27:00 IST" name="Launch" finished-at="2021-07-14T14:27:07 IST" duration-ms="6061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method signature="Facebook()[pri:0, instance:com.asserts.Assertions@55536d9e]" started-at="2021-07-14T14:27:07 IST" name="Facebook" finished-at="2021-07-14T14:27:11 IST" depends-on-methods="com.asserts.Assertions.Launch" duration-ms="4333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Facebook -->
+        <test-method signature="Login()[pri:0, instance:com.asserts.Assertions@55536d9e]" started-at="2021-07-14T14:27:11 IST" name="Login" finished-at="2021-07-14T14:27:15 IST" depends-on-methods="com.asserts.Assertions.Facebook" duration-ms="3751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- com.asserts.Assertions -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
